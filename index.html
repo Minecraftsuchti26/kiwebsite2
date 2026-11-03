@@ -1,0 +1,339 @@
+Anmelden
+Kostenlos registrieren
+kanst du mir ein index.html code für eine website über bob dylan erstellen
+
+Klar! Hier ist eine moderne, stilvolle index.html-Website über Bob Dylan. Sie hat ein Design im Vintage-Stil, passend zu seiner Musik und seiner Karriere.
+
+Die Website enthält:
+
+Eine Startseite mit großem Titelbild
+
+Informationen über Bob Dylan
+
+Seine bekanntesten Songs
+
+Seine Karriere und Erfolge
+
+Ein dunkles Design mit goldenen Akzenten
+
+Ein responsives Layout für Handy und Computer
+
+index.html
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bob Dylan – Musiklegende</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #171717;
+            color: #f5f0e6;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid #8e713e;
+        }
+
+        header h2 {
+            color: #c5a15d;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c5a15d;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)),
+                url('https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=1600')
+                center/cover;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 9vw, 6rem);
+            color: #d5b574;
+            letter-spacing: 5px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 15px;
+        }
+
+        .hero a {
+            margin-top: 30px;
+            padding: 12px 30px;
+            border: 1px solid #c5a15d;
+            color: #c5a15d;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .hero a:hover {
+            background: #c5a15d;
+            color: #111;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            color: #c5a15d;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        .songs {
+            background: #202020;
+        }
+
+        .song-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .song {
+            background: #292929;
+            padding: 25px;
+            border-left: 3px solid #c5a15d;
+            transition: 0.3s;
+        }
+
+        .song:hover {
+            transform: translateY(-5px);
+            background: #333;
+        }
+
+        .song h3 {
+            color: #d5b574;
+            margin-bottom: 10px;
+        }
+
+        .career {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .career-item {
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 2px solid #c5a15d;
+            background: #222;
+        }
+
+        .career-item h3 {
+            color: #c5a15d;
+        }
+
+        .quote {
+            text-align: center;
+            background: #30291e;
+            padding: 70px 15%;
+            font-size: 1.5rem;
+            font-style: italic;
+        }
+
+        .quote span {
+            display: block;
+            color: #c5a15d;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: #101010;
+            padding: 30px;
+            text-align: center;
+            color: #888;
+        }
+
+        @media(max-width: 650px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 0.85rem;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>BOB DYLAN</h2>
+        <nav>
+            <a href="#about">Über ihn</a>
+            <a href="#songs">Songs</a>
+            <a href="#career">Karriere</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>BOB DYLAN</h1>
+        <p>Eine Stimme. Eine Generation. Eine Legende.</p>
+        <a href="#about">Entdecke seine Geschichte</a>
+    </div>
+
+    <section id="about">
+        <h2 class="section-title">Wer ist Bob Dylan?</h2>
+
+        <div class="about">
+            <p>
+                Bob Dylan wurde am 24. Mai 1941 als Robert Allen Zimmerman
+                in Duluth, Minnesota, geboren. Er ist ein US-amerikanischer
+                Singer-Songwriter, Musiker und Dichter.
+            </p>
+
+            <br>
+
+            <p>
+                Mit seiner einzigartigen Stimme und seinen tiefgründigen
+                Texten veränderte er die Welt der Musik. Besonders in den
+                1960er-Jahren wurde er zu einer wichtigen Stimme seiner
+                Generation. Seine Songs beschäftigen sich mit Liebe,
+                Freiheit, Politik und dem Leben.
+            </p>
+
+            <br>
+
+            <p>
+                2016 erhielt Bob Dylan den Nobelpreis für Literatur.
+                Damit wurde sein außergewöhnlicher Beitrag zur
+                Songwriting-Kunst ausgezeichnet.
+            </p>
+        </div>
+    </section>
+
+    <section class="songs" id="songs">
+        <h2 class="section-title">Seine bekanntesten Songs</h2>
+
+        <div class="song-list">
+
+            <div class="song">
+                <h3>Blowin' in the Wind</h3>
+                <p>1963 – Ein Lied über Frieden, Freiheit und
+                gesellschaftliche Veränderungen.</p>
+            </div>
+
+            <div class="song">
+                <h3>Like a Rolling Stone</h3>
+                <p>1965 – Einer seiner berühmtesten Songs und
+                ein Meilenstein der Rockmusik.</p>
+            </div>
+
+            <div class="song">
+                <h3>The Times They Are A-Changin'</h3>
+                <p>1964 – Eine Hymne für Veränderung und
+                gesellschaftlichen Wandel.</p>
+            </div>
+
+            <div class="song">
+                <h3>Knockin' on Heaven's Door</h3>
+                <p>1973 – Ein emotionaler Klassiker aus dem
+                Film Pat Garrett & Billy the Kid.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="career">
+        <h2 class="section-title">Seine Karriere</h2>
+
+        <div class="career">
+
+            <div class="career-item">
+                <h3>1962 – Der Anfang</h3>
+                <p>Bob Dylan veröffentlicht sein erstes Album
+                und beginnt seine musikalische Karriere.</p>
+            </div>
+
+            <div class="career-item">
+                <h3>1960er – Der Durchbruch</h3>
+                <p>Mit Songs wie "Blowin' in the Wind" wird
+                er international bekannt.</p>
+            </div>
+
+            <div class="career-item">
+                <h3>1970er – Neue musikalische Wege</h3>
+                <p>Er experimentiert mit verschiedenen Musikstilen
+                und veröffentlicht erfolgreiche Alben.</p>
+            </div>
+
+            <div class="career-item">
+                <h3>2016 – Nobelpreis</h3>
+                <p>Bob Dylan erhält den Nobelpreis für Literatur
+                für seine poetischen Songtexte.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="quote">
+        "The answer, my friend, is blowin' in the wind."
+        <span>– Bob Dylan</span>
+    </div>
+
+    <footer>
+        <p>© 2026 – Fanwebsite über Bob Dylan</p>
+        <p>Eine Hommage an eine der grössten Musiklegenden.</p>
+    </footer>
+
+</body>
+</html>
